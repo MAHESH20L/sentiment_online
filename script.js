@@ -53,7 +53,7 @@ async function uploadCSV(){
             const formData = new FormData();
             formData.append("file", file);
 
-            res = await fetch("https://sentiment-online.onrender.com/predict-csv",{
+            res = await fetch("https://pattimanim-sentiment.hf.space/predict-csv",{
                 method:"POST",
                 body:formData
             });
@@ -65,7 +65,7 @@ async function uploadCSV(){
 
             const directLink = convertToDirectCSV(csvLink);
 
-            res = await fetch("https://sentiment-online.onrender.com/predict-csv-link",{
+            res = await fetch("https://pattimanim-sentiment.hf.space/predict-csv-link",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
