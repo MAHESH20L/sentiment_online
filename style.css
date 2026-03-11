@@ -24,6 +24,7 @@ body{
     font-size:22px;
     font-weight:700;
     color:#22c55e;
+    letter-spacing:0.5px;
 }
 
 .nav-links button{
@@ -39,6 +40,7 @@ body{
 
 .nav-links button:hover{
     color:#22c55e;
+    transform:translateY(-1px);
 }
 
 /* ===== CONTAINER ===== */
@@ -57,18 +59,16 @@ body{
 }
 
 .upload-card h2{
+    margin-bottom:10px;
     color:#0f172a;
 }
 
-/* ===== INPUTS ===== */
-input[type="file"],
-input[type="text"]{
+input[type="file"]{
     padding:12px;
     border:2px dashed #cbd5e1;
     border-radius:10px;
     background:#f8fafc;
     width:60%;
-    font-size:14px;
 }
 
 /* ===== BUTTON ===== */
@@ -127,12 +127,7 @@ td{
 
 tr:hover{
     background:#f1f5f9;
-}
-
-/* ===== TABLE WRAPPER ===== */
-.table-wrapper{
-    width:100%;
-    overflow-x:auto;
+    transition:0.2s;
 }
 
 /* ===== CHART IMAGES ===== */
@@ -153,19 +148,32 @@ img{
     color:#2563eb;
 }
 
-/* ===== OR DIVIDER ===== */
+/* ===== SCROLL ===== */
+::-webkit-scrollbar{
+    width:8px;
+}
+::-webkit-scrollbar-thumb{
+    background:#94a3b8;
+    border-radius:10px;
+}
+/* LINK INPUT */
+input[type="text"]{
+    padding:12px;
+    border:2px dashed #cbd5e1;
+    border-radius:10px;
+    background:#f8fafc;
+    width:60%;
+    font-size:14px;
+}
+
+/* OR divider */
 .divider{
     margin:20px 0;
     font-weight:600;
     color:#64748b;
 }
 
-/* ===== SCROLLBAR ===== */
-::-webkit-scrollbar{
-    width:8px;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#94a3b8;
-    border-radius:10px;
+/* ANALYZE BUTTON */
+.analyze-btn{
+    margin-top:15px;
 }
