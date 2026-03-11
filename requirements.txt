@@ -3,7 +3,7 @@
 fastapi
 uvicorn
 transformers
-torch==2.2.2+cpu
+torch==2.7.1+cpu
 pandas
 matplotlib
 requests
