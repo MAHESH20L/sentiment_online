@@ -272,3 +272,12 @@ img{
 }
 
 }
+/* TABLE MOBILE FIX */
+.table-wrapper{
+    width:100%;
+    overflow-x:auto;
+}
+
+table{
+    min-width:650px;
+}
