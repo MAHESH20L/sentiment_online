@@ -179,69 +179,46 @@ input[type="text"]{
 }
 
 /*Updated for mobile layout*/
-/* ===== MOBILE VIEW ===== */
+/* ===== MOBILE FORM STYLE ===== */
 @media (max-width:768px){
 
-/* NAVBAR STACK */
-.navbar{
-    flex-direction:column;
-    align-items:flex-start;
-    padding:15px 20px;
-}
-
-/* LOGO */
-.logo{
-    margin-bottom:10px;
-}
-
-/* NAV LINKS MOBILE */
-.nav-links{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-}
-
-.nav-links button{
-    margin:5px 0;
-    text-align:left;
-    font-size:15px;
-}
-
-/* CONTAINER */
-.container{
-    padding:20px;
-}
-
-/* UPLOAD CARD */
+/* CARD LOOK LIKE MOBILE FORM */
 .upload-card{
-    padding:20px;
+    width:100%;
+    padding:25px;
+    border-radius:18px;
 }
 
-/* INPUTS FULL WIDTH */
+/* BIG INPUT BOXES */
 input[type="file"],
 input[type="text"]{
     width:100%;
+    padding:18px;
+    font-size:16px;
+    border-radius:12px;
+    border:2px solid #cbd5e1;
+    margin-top:12px;
 }
 
-/* BUTTON FULL WIDTH */
+/* BIG BUTTON */
 .analyze-btn{
     width:100%;
+    padding:18px;
+    font-size:18px;
+    border-radius:12px;
+    margin-top:18px;
 }
 
-/* TABLE SCROLL */
-table{
-    display:block;
-    overflow-x:auto;
+/* CENTER TEXT */
+.upload-card h2{
+    font-size:20px;
+    margin-bottom:15px;
 }
 
-/* CHART IMAGES */
-img{
-    width:100%;
-}
-
-/* SECTION CARD */
-.section-card{
-    padding:20px;
+/* SPACE BETWEEN ELEMENTS */
+.divider{
+    margin:25px 0;
+    font-size:14px;
 }
 
 }
