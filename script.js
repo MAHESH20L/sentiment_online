@@ -114,9 +114,6 @@ function buildTable(){
 
     let html=`<div class="section-card">
     <h2>📄 Sentiment Results</h2>
-
-    <div class="table-wrapper">
-
     <table>
     <tr>
     <th>Tweet</th>
@@ -134,7 +131,7 @@ function buildTable(){
         </tr>`;
     });
 
-    html+="</table></div></div>";
+    html+="</table></div>";
 
     document.getElementById("tableSection").innerHTML = html;
 }
@@ -167,9 +164,6 @@ function buildCharts(){
 
     html += `
     <h2>📄 Sentiment Results</h2>
-
-    <div class="table-wrapper">
-
     <table border="1" style="width:100%;border-collapse:collapse;">
     <tr>
     <th>Tweet</th>
@@ -187,7 +181,7 @@ function buildCharts(){
         </tr>`;
     });
 
-    html += `</table></div></div>`;
+    html += `</table></div>`;
 
     document.getElementById("chartSection").innerHTML = html;
 }
