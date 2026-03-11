@@ -1,7 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+
 fastapi
 uvicorn
 transformers
-torch --index-url https://download.pytorch.org/whl/cpu
+torch==2.2.2+cpu
 pandas
 matplotlib
 requests
