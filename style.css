@@ -177,3 +177,65 @@ input[type="text"]{
 .analyze-btn{
     margin-top:15px;
 }
+
+/*Updated for mobile layout*/
+/* ===== MOBILE VIEW ===== */
+@media (max-width:768px){
+
+/* NAVBAR */
+.navbar{
+    flex-direction:column;
+    align-items:flex-start;
+    padding:15px 20px;
+}
+
+.nav-links{
+    margin-top:10px;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.nav-links button{
+    margin-left:0;
+    font-size:14px;
+}
+
+/* CONTAINER */
+.container{
+    padding:20px;
+}
+
+/* UPLOAD CARD */
+.upload-card{
+    padding:20px;
+}
+
+/* INPUTS */
+input[type="file"],
+input[type="text"]{
+    width:100%;
+}
+
+/* BUTTON */
+button{
+    width:100%;
+}
+
+/* TABLE */
+table{
+    font-size:12px;
+}
+
+/* CHARTS */
+img{
+    width:100%;
+}
+
+/* SECTION CARD */
+.section-card{
+    padding:20px;
+}
+
+}
