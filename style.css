@@ -26,7 +26,6 @@ body{
     color:#22c55e;
 }
 
-/* NAV BUTTONS */
 .nav-links button{
     background:transparent;
     border:none;
@@ -111,7 +110,6 @@ table{
     border-collapse:collapse;
     margin-top:20px;
     font-size:14px;
-    min-width:650px;
 }
 
 th{
@@ -131,7 +129,7 @@ tr:hover{
     background:#f1f5f9;
 }
 
-/* ===== TABLE WRAPPER (MOBILE SCROLL) ===== */
+/* ===== TABLE WRAPPER ===== */
 .table-wrapper{
     width:100%;
     overflow-x:auto;
@@ -170,72 +168,4 @@ img{
 ::-webkit-scrollbar-thumb{
     background:#94a3b8;
     border-radius:10px;
-}
-
-/* ===== MOBILE RESPONSIVE ===== */
-@media (max-width:768px){
-
-/* NAVBAR STACK */
-.navbar{
-    flex-direction:column;
-    align-items:flex-start;
-    padding:15px 20px;
-}
-
-/* NAV LINKS */
-.nav-links{
-    display:flex;
-    flex-direction:column;
-    width:100%;
-    margin-top:10px;
-}
-
-.nav-links button{
-    margin:6px 0;
-}
-
-/* CONTAINER */
-.container{
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-/* UPLOAD CARD */
-.upload-card{
-    width:100%;
-    max-width:350px;
-    padding:20px;
-}
-
-/* INPUTS */
-input[type="file"],
-input[type="text"]{
-    width:100%;
-    padding:16px;
-    font-size:16px;
-}
-
-/* BUTTON */
-.analyze-btn{
-    width:100%;
-    padding:14px;
-    font-size:16px;
-}
-
-/* TABLE TEXT */
-table{
-    font-size:13px;
-}
-
-th,td{
-    padding:10px;
-}
-
-/* CHARTS */
-img{
-    width:100%;
-}
-
 }
