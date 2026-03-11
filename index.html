@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Sentiment Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+    <div class="logo">🤖 AI Sentiment Dashboard</div>
+
+    <div class="nav-links">
+        <button onclick="showHome()">Home</button>
+        <button onclick="showCharts()">Charts</button>
+        <button onclick="showReco()">AI Recommendations</button>
+        <button onclick="downloadPDF()">Download PDF</button>
+    </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="container">
+
+    <!-- UPLOAD CARD -->
+    <div class="upload-card">
+
+        <h2>Upload CSV File</h2>
+
+        <!-- FILE UPLOAD -->
+        <input type="file" id="csvFile" accept=".csv">
+
+        <div class="divider">OR</div>
+
+        <!-- CSV LINK -->
+        <input 
+            type="text" 
+            id="csvLink" 
+            placeholder="Paste CSV file link here (Google Drive, GitHub, etc)"
+        >
+
+        <br>
+
+        <!-- ANALYZE BUTTON -->
+        <button class="analyze-btn" onclick="uploadCSV()">
+            🚀 Analyze Tweets
+        </button>
+
+        <div id="loading">⏳ Processing...</div>
+
+    </div>
+
+    <!-- TABLE -->
+    <div id="tableSection"></div>
+
+    <!-- CHARTS -->
+    <div id="chartSection" style="display:none;"></div>
+
+    <!-- RECOMMENDATIONS -->
+    <div id="recoSection" style="display:none;"></div>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
