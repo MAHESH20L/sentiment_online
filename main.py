@@ -250,7 +250,23 @@ def analyze_dataframe(df):
 
     topic_chart = base64.b64encode(buf2.read()).decode("utf-8")
     plt.close()
-
+    # =============================
+    # NEGATIVE ISSUES RANKING CHART
+    # =============================
+    neg_counts = topic_df[topic_df["sentiment"]=="Negative 😡"]["topic"].value_counts()
+    plt.figure(figsize=(8,5))
+    if len(neg_counts) > 0:
+        neg_counts.plot(kind="bar")
+        plt.title("Top Negative Issues")
+        plt.ylabel("Number of Complaints")
+    else:
+        plt.text(0.5, 0.5, "No Negative Issues 🎉", ha='center', va='center')
+    plt.tight_layout()
+    buf3 = io.BytesIO()
+    plt.savefig(buf3, format="png")
+    buf3.seek(0)
+    negative_chart = base64.b64encode(buf3.read()).decode("utf-8")
+    plt.close()
 
     # =============================
     # AI RECOMMENDATIONS
@@ -287,6 +303,7 @@ def analyze_dataframe(df):
         "results": results,
         "overall_sentiment_chart": overall_chart,
         "topic_sentiment_chart": topic_chart,
+        "negative_topics_chart": negative_chart,
         "recommendations": recommendations
     }
 
