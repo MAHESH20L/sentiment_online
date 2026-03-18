@@ -156,7 +156,11 @@ function buildCharts(){
     <img src="data:image/png;base64,${globalData.topic_sentiment_chart}">
     <h2>🚨 Top Negative Issues</h2>
     <img src="data:image/png;base64,${globalData.negative_topics_chart}">
-
+    <h2>📊 Model Metrics</h2>
+    <img src="data:image/png;base64,${globalData.metrics_chart}">
+    
+    <h2>🧠 Confusion Matrix</h2>
+    <img src="data:image/png;base64,${globalData.confusion_matrix_chart}">
     <h2>🧠 AI Recommendations</h2>
     `;
 
